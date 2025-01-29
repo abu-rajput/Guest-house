@@ -1,0 +1,1110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap'); /*log name use    */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  
+}
+#sec-1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+section a{
+    text-decoration: none;
+    color: black;
+}
+section img{
+    width: 100%;
+    height:100vh;
+    position: absolute;
+    object-fit: cover;
+}
+section header{
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(255, 255, 255, 0.113);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    /* padding: 0 2rem; */
+}
+section header .logo, #menu{
+    display: none;
+}
+    section header .logoin{
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.8vw;
+    color: white;
+    font-family: "Kaushan Script", cursive;
+    text-shadow: black 2px 1px 0px;
+    margin: 0 5vw;
+}
+section #button{
+    height: 3vw;
+    position: absolute;
+    z-index: 1;
+    padding:.5rem 1rem;
+    transform: rotate(90deg);
+    right: -45px;
+    top: 50%;
+    background-color: white;
+    font-size: 1.5vw;
+    border: none;
+    outline: none;
+    font-weight: bold;
+
+}
+#button:hover{
+    background-color:rgb(249, 0, 170) ;
+}
+section #backdrop{
+    width: 50rem;
+    height: 18rem;
+    background-color: rgba(255, 255, 255, 0.113);
+    position: absolute;
+    z-index: 1;
+    top: 32%;
+    left: 20%;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section #backdrop p{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    opacity: 50%;
+}
+section #backdrop h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4vw;
+    color: white;
+    text-transform: capitalize;
+}
+
+section #backdrop h1 span{
+    color: rgb(249, 0, 170);
+}
+
+section header nav{
+    display: flex;
+    list-style: none;
+    gap: 4.5rem;
+    top: 1rem;
+    font-weight: 400;
+
+    
+}
+section header nav a{
+    color: black;
+    text-decoration: none;
+    padding-top: 1.3rem;
+    font-size: 1.5rem;
+}
+section header nav a:hover{
+    text-decoration:underline;
+}
+#sec-2{
+    width: 100%;
+    height: 93vh;
+    padding: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#sec-2 #left{
+    width: 50%;
+    
+}
+#sec-2 #left a{
+    padding: .75rem 1.5rem;
+    background-color: rgb(249, 0, 170);
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+#sec-2 #left #cap, #sec-3  #cap{
+    color: rgb(249, 0, 170);
+    display: flex;
+    line-height: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1vw;
+    letter-spacing: .3vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+}
+#sec-2 #left #cap #dobleline,#sec-3  #cap #dobleline{
+    width: 5vw;
+    height: .16vw;
+    margin-bottom: .5vw;
+    background-color:rgb(249, 0, 170);
+
+}
+#sec-2 #left  #cap #dobleline::after,#sec-3 #cap #dobleline::after{
+    content: "";
+    display:flex;
+    width: 3vw;
+    /* float: right; */
+    margin-top: .4rem;
+    height: .15vw;
+    background-color:rgb(249, 0, 170);
+}
+
+#sec-2 #left span p ,#sec-3  span p{
+    width: 6rem;
+    height: .2rem;
+    background-color: rgb(249, 0, 170);
+}
+#sec-2 #left address{
+    box-shadow: -3px 0px 0px rgb(249, 0, 170);
+    margin: 1rem 0;
+    padding: .5vw .5vw;
+    border-radius: .5vw;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+#sec-2 #right{
+    width: 45%;
+    display: flex;
+    justify-content: end;
+}
+
+#sec-2 #right .img{
+    width: 60%;
+    height: 90%;
+    border: .5rem solid rgb(249, 0, 170);
+    position: relative;
+    margin-top: 2.5vw;
+    margin-right: -2.2vw;
+}
+#sec-2 #right .img img{
+    width: 120%;
+    height: 110%;
+    margin-top: -5vw; 
+    margin-left: -6.5vw;
+    /* padding: 1rem; */
+    position: absolute;
+    /* object-fit: cover; */
+}
+#sec-3{
+    width: 100%;
+    height: 93vh;
+    padding:1vw 5vw;
+    /* overflow: hidden; */
+    /* background-color: blue; */
+}
+@keyframes height {
+    from{
+        opacity: 0;
+        scale: 0;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+    
+}
+#sec-3 #card{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+}
+#sec-3 #card #card-img{
+    width: 100%;
+    height: 20rem;
+    background-color: black;
+    position: relative;
+}
+#sec-3 #card .card-1{
+    box-shadow: 0px 0px 2px 0px;
+   margin-bottom: 2rem;
+   animation: height linear;
+    animation-timeline: view() ;
+    animation-range: entry 0% cover 45%;
+
+}
+#sec-3 #card #card-img #price{
+    position: absolute;
+    padding: .5vw .8vw;
+    border-bottom-right-radius: 1.5vw;
+    background-color:rgba(249, 0, 170, 0.453) ;
+    backdrop-filter: blur(12px);
+    top: 0px;
+    text-transform: capitalize;
+    color: white;
+}
+#sec-3 #card #card-img #price span{
+    font-size: 1.7vw;
+}
+#sec-3 #card #card-img img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+
+}
+#sec-3 #card .card-1{
+    width: 340px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* overflow: hidden; */
+    /* background-color: aqua; */
+}
+#sec-3 #card #card-detail{
+    width: 100%;
+    /* border: .3rem solid gray; */
+    padding: .5rem;
+    border-top: none;
+}
+#sec-2 h1,#sec-3 h1, #sec-4 h1{
+    font-size: 3rem;
+    line-height: 4vw;
+    margin: 1rem 0;
+    
+
+}
+                                                    /* #sec-4 */
+
+#sec-4{
+    width: 100%;
+    height: 92vh;
+    padding: 5vw;
+}
+#sec-4  #our{
+    padding: .75rem 2rem;  
+    background-color: rgb(249, 0, 170);
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .12rem;
+    color: white;
+
+}
+#sec-4 h1{
+    margin:2rem 0;
+    
+}
+#sec-4 .design{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#sec-4 .design .long{
+    width: 57%;
+    height: 55vh;
+    background-color: rgb(249, 0, 170);
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: height linear;
+    animation-timeline: view() ;
+    animation-range: entry 0% cover 45%;
+}
+#sec-4 .long ul{
+    font-size: 2rem;
+    color: white;
+}
+#sec-4 .long ul li{
+    list-style: none;
+
+}
+#sec-4 .long ul li span{
+    margin-left: 1vw;
+
+}
+
+#sec-4 .design #small{
+    width: 20%;
+    height: 55vh;
+    background-color: black;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 4vw;
+    border-bottom-left-radius: 4vw;
+    border-bottom-right-radius: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    animation: height linear;
+    animation-timeline: view() ;
+    animation-range: entry 0% cover 45%;
+}
+#sec-4 .design h2{
+    color: white;
+    font-weight: 300;
+}
+#sec-4 .design .small{
+    width: 20%;
+    height: 55vh;
+    background-color: rgb(249, 0, 170);
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 4vw;
+    border-bottom-left-radius: 4vw;
+    border-bottom-right-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    animation: height linear;
+    animation-timeline: view() ;
+    animation-range: entry 0% cover 45%;
+}
+
+                    /* gallary */
+#gallary{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem 0;
+}
+#gallary #row{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 6vw; */
+    flex-wrap: wrap;
+}
+.rowleft{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+.rowright{
+    width: 30%;
+    height: 100%;
+    background-color: tomato;
+}
+.rowright #horizon4{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/out.jpg);
+    /* background-position: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#horizon{
+    width: 50%;
+    height: 100%;
+    background-image: url(./img/large.jpg);
+    background-position: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#horizon3{
+    width: 45%;
+    height: 100%;
+    background-image: url(./img/mithonDam.webp);
+    background-position: 40%;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#horizon1{
+    width: 45%;
+    height: 100%;
+    background-image: url(./img/palash.webp);
+    background-position: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#horizon2{
+    width: 50%;
+    height: 100%;
+    background-image: url(./img/header.jpg);
+    background-position: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fixed{
+    z-index: 90;
+}
+#fixed #chat{
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 3.3vw;
+    color: white;
+    background-color: white;
+    background-color:rgb(249, 0, 170);
+}
+#fixed{
+    position: fixed;
+    right: 1vw;
+    bottom: 1vw;
+}
+#fixed img{
+    width: 7vw;
+}
+/* Contact */
+#contact{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 5vw;
+    /* background-color: orange; */
+}
+#contact #conLeft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+}
+#contact #conLeft span {
+    display: flex;
+    /* font-size: 2vw; */
+}
+#contact #conLeft span .bx{
+    display: flex;
+    margin-right: 2vw;
+    font-size: 1.5rem;
+    color: rgb(249, 0, 170);
+}
+#contact #conRight{
+    width: 30%;
+    height:max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    gap: 2vw;
+    padding: 4vw 2vw;
+    box-shadow: 0px 0px 1px 0px;
+}
+#contact #conRight input{
+    width: 100%;
+    padding: .7vw;
+    margin-bottom: 1.2vw;
+    border: 2px solid rgb(249, 0, 170);
+
+}
+#contact #conRight #message{
+    width: 100%;
+    height: 10vw;
+    
+    padding: .7vw;
+    margin-bottom: 1.2vw;
+    border: 2px solid rgb(249, 0, 170);
+
+}
+#contact #conRight button{
+    width: 100%;
+    padding: .7vw;
+    background-color: rgb(249, 0, 170);
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+                                                    /* Footer */
+footer{
+    width: 100%;
+    height: fit-content;
+    padding:2vw 5vw;
+    padding-top: 10vw;
+    background-color: black;
+}
+
+footer .follow{
+    width: 100%;
+    padding: 2vw 0;
+    color: white;
+    flex-wrap: wrap;
+    display: flex;
+    border-bottom: 2px solid white;
+    justify-content: space-between;
+}
+footer .follow .logo{
+    font-size: 2.5vw;
+    font-family: "Kaushan Script", cursive;
+
+}
+footer .follow span a{
+    padding: .3vw;
+    font-size: 2.5vw;
+    border-radius: 50%;
+    margin-left: 2vw;
+    text-decoration: none;
+    color: white;
+}
+footer .follow span a:hover{
+    color: rgb(249, 0, 170);
+}
+footer #links{
+    width: 100%;
+    height: max-content;
+    padding: 3vw 0;
+    color: white;
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer #links ul a{
+    text-decoration: none;
+    
+}
+footer #links ul a li {
+    color: white;
+    margin-top: 1vw;
+    list-style: none;
+}
+footer  #copy{
+    color: white;
+    text-align: center;
+    margin: 2rem ;
+}
+@media screen and (min-width:0px) and (max-width:480px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #sec-1{
+        width: 100%;
+        height: 65vh;
+    }
+     #gallary{
+        display: none;
+    }
+    #sec-1 header{
+        width: 100%;
+        height: 18vw;
+        position: fixed;
+        padding: 0 5vw ;
+        justify-content: space-between;
+    }
+    section header .logo{
+        display: block;
+        text-align: center;
+        color: white;
+        text-shadow: black 1px 1px 0px;
+
+        font-family: "Kaushan Script", cursive;
+
+    }
+    section header #menu{
+        width: fit-content;
+        height: max-content;
+        display: block;
+        font-size: 2rem;
+        position: relative;
+    }
+    #sec-1 header .logo{
+        z-index: 1000;
+    }
+    #sec-1 header #nav-1{
+        width: 100%;
+        display: none;
+        overflow: hidden;
+        position: absolute;
+        gap: 10px;
+        padding: 1rem 1rem 0;
+        left: 0px;
+        margin-top: 3rem;
+        flex-direction: column;
+        color: white;
+    }
+    #sec-1 header #nav-1 a li{
+        margin-top: 2rem;
+        font-size:x-larger;
+    }
+    #sec-1 header #nav-1 a:hover{
+        background-color: violet;
+    }
+    .logoin{
+        display: none;
+    }
+    #sec-1 img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        
+    }
+    #sec-1 #button{
+        height: 7vw;
+        position: absolute;
+        padding: 1vw .6rem;
+        right: -7vw;
+        top: 48%;
+        font-size: 3.5vw;
+    }
+    #sec-1 #backdrop{
+        width:max-content;
+        height: auto;
+        position: absolute;
+        padding: 6vw 5vw;
+        top: 33%;
+        left:12%;
+        /* display: none; */
+        /* background-color: aqua; */
+    }
+    #sec-1 #backdrop p{
+        font-size: 3vw;
+        /* color: black; */
+    }
+    #sec-1 #backdrop h1{
+        font-size:6vw;
+        line-height: normal;
+    }
+                                                /*  #sec-2   */
+    
+    #sec-2, #sec-3, #sec-4{
+        width: 100%;
+        height:max-content;
+        /* margin-top: 3rem; */
+    }    
+    #sec-2 #left{
+        width: 100%;
+        height: max-content;
+        padding: 1vw;
+        animation: height linear;
+    animation-timeline: view() ;
+    animation-range: entry 0% cover 45%;
+    }
+    #sec-2 #left h1, #sec-3 h1, #sec-4 h1{
+        line-height:1;
+        font-size:10vw;
+    }
+    #sec-2 #left address{
+        box-shadow: -3px 0px 0px rgb(249, 0, 170);
+        border-radius: 2vw;
+
+        padding: .5rem;   
+    }
+    #sec-2 #right{
+        width: 100%;
+        height: 450px;
+        order: -1;
+        display: flex;
+        align-items: center;
+        padding: 5vw;
+        justify-content: center;
+    }
+    #sec-2 #right .img{
+        width: 96%;
+        margin-left: 3vw;
+        margin-top: 5vw;
+    }
+    #sec-2 #right .img img{
+        width: 105%;
+        margin-top: -14vw;
+    }
+    #sec-2 #left #cap, #sec-3 #cap{
+        font-size: 4.5vw;
+    }
+    #sec-2 #left #cap #dobleline, #sec-3 #cap #dobleline{
+        width: 15vw;
+        height: .5vw;
+        margin-left: 2.5vw;
+        margin-bottom: 0vw;    
+    }
+    #sec-2 #left  #cap #dobleline::after, #sec-3 #cap #dobleline::after{
+        content: "";
+        display:flex;
+        width: 8vw;
+        margin-top: .30rem;
+        height: .50vw;
+    
+    }
+                        /* sec-3 */
+    #sec-3{
+        width: 100%;
+        height:max-content;
+        margin-top: 2rem;
+    }
+    #sec-3 #card {
+        padding: 0 1vw;
+    }
+    #sec-3 #card .card-1{
+        width: 100%;
+        
+    }
+    #sec-3 #card #card-img #price span{
+        font-size: x-large;
+    }
+/* #sec-4 */
+    #sec-4{
+        width: 100%;
+        height: max-content;
+        margin-top: 1rem;
+    }
+    #sec-4 .design {
+        flex-wrap: wrap;
+        gap: 5vw;
+    }
+    #sec-4 .design .long{
+        width: 100%;
+        border-top-left-radius: 12vw;
+        border-top-right-radius: 3vw;
+        border-bottom-left-radius: 3vw;
+        border-bottom-right-radius: 12vw;
+    }
+    #sec-4 .design .long ul{
+        display: flex;
+        flex-direction: column;
+        font-size: 6vw;
+    }
+    #sec-4 .design .small, #sec-4 .design #small{
+        width: 100%;
+        height: 280px;
+        border-top-left-radius: 8vw;
+        border-top-right-radius: 8vw;
+        border-bottom-left-radius: 8vw;
+        border-bottom-right-radius: 3vw;
+    }
+    #fixed #chat{
+        width: 11vw;
+        height: 11vw;
+        font-size: 2rem;
+    }
+    #fixed {
+        right: 3vw;
+        bottom: 3vw;
+    }
+    #contact{
+        width: 100%;
+        height: fit-content;
+        margin-bottom: -5rem;
+    }
+    #contact #conLeft{
+        width: 100%;
+    }
+    #contact #conLeft .bx{
+        font-size: 50rem;
+    }
+    #contact #conRight{
+        width: 100%;
+        height: fit-content;
+        padding: 3rem 1rem;
+        margin: 1rem  0;
+
+    }
+    #contact #conRight #message{
+        width: 100%;
+        height: 30vw;
+        padding: .7vw;
+        margin-bottom: 1.2vw;
+        border: 2px solid rgb(249, 0, 170);
+    
+    }
+    #contact #conRight button{
+        width: 100%;
+        padding: 2vw;
+        background-color: rgb(249, 0, 170);
+        outline: none;
+        border: none;
+        font-size: larger;
+        color: white;
+        cursor: pointer;
+    }
+    #contact #conRight input{
+        width: 100%;
+        padding: 2.2vw;
+        margin-bottom: 2.2vw;
+        border: 2px solid rgb(249, 0, 170);
+    
+    }
+    
+                /* footer */
+    #footer{
+        width: 100%;
+        height: 100vh;
+        margin-top: 20vw;
+    
+    }
+    footer .follow{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    footer .follow .logo{
+        font-size: 5vw;
+    }
+    footer .follow .bx{
+        font-size: 4vw;
+        margin-top: 1.5vw;
+    }
+    footer #links{
+        width: 100%;
+    }
+    footer #links ul{
+        margin-right: 15vw;
+        margin-top: 6vw;
+    }
+
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    #sec-1 header{
+        width: 100%;
+        justify-content: space-between;
+        position: fixed;
+        padding: 5vw;
+    }
+    #sec-2 h1, #sec-3 h1, #sec-4 h1 {
+        font-size: 3rem;
+        line-height: 8vw;
+        margin: 1rem 0;
+    }
+    #sec-1 .logo{
+        display: block;
+        font-family: "Kaushan Script", cursive;
+        line-height: normal;
+    }
+    #sec-1 #menu{
+        font-size: 6vw;
+        padding: .5vw 1vw 0vw;
+        border-radius: .5vw;
+        color: black;
+        display: block;
+    }
+    #sec-1 header nav{
+        display: none;
+    }
+    #sec-1 img{
+        width: 100%;
+        position: relative;
+    }
+    #sec-1 #backdrop{
+        width:max-content;
+        height: fit-content;
+        position: absolute;
+        left: 5vw;
+        top: 30%;
+        padding: 4vw 3vw;        
+    }
+    #sec-1 #backdrop p{
+    font-size: 3vw;
+    }
+    #sec-1 #backdrop h1{
+        font-size:7vw;
+        line-height: normal;
+
+    }
+    #sec-1 #button{
+        height: 6vw;
+        position: absolute;
+        padding: auto;
+        right: -7vw;
+        top: 50%;
+        font-size: 3vw;
+        /* right: 0; */
+
+    }
+    #sec-2{
+        width: 100%;
+        height: fit-content;
+    }
+    #sec-2 #left{
+        width: 100%;
+        height: fit-content;
+    }
+    
+    #sec-2 #right {
+        width: 100%;
+        height: 450px;
+        order: -1;
+        display: flex;
+        align-items: center;
+        padding: 5vw;
+        justify-content: center;
+    }
+    #sec-2 #right .img img {
+        width: 105%;
+        margin-top: -9vw;
+    }
+    #sec-2 #left #cap, #sec-3 #cap{
+        font-size: 2.5vw;
+    }
+    
+    #sec-2 #left #cap #dobleline,#sec-3 #cap #dobleline{
+        width: 5vw;
+        height: .3vw;
+        margin-bottom: .7vw;
+        background-color:rgb(249, 0, 170);
+    
+    }
+    #sec-2 #left  #cap #dobleline::after, #sec-3 #cap #dobleline::after{
+        content: "";
+        display:flex;
+        width: 8vw;
+        margin-top: .4rem;
+        height: .4vw;
+    
+        background-color:rgb(249, 0, 170);
+    }
+    #sec-3{
+        width: 100%;
+        height: fit-content;
+    }
+    #sec-3 #card .card-1{
+        width: 100%;
+        
+    }
+    #sec-3 #card #card-img #price span {
+        font-size: 2.7vw;
+    }
+    #sec-3 #card #card-detail {
+        padding: 1rem;
+    }
+    /* sec-4 */
+    #sec-4 {
+        width: 100%;
+        height: fit-content;
+    }
+    #sec-4 .design .long {
+        width: 100%;
+    }
+    #sec-4 .design .small,#sec-4 .design  #small {
+        width: 48%;
+        margin: 3vw 0;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    #sec-1 header{
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+    }
+    section header .logoin{
+        line-height: normal;
+
+    }
+    section header nav {
+        gap: 1.5rem;
+
+    }
+    section header nav a{
+        font-size: large;
+        padding-top: 1.7rem;
+
+    }
+    
+
+    section #backdrop{
+        width: 80vw;
+        top: 27%;
+        left: 10%;
+    }
+    #sec-1 #button{
+        height: 6vw;
+        position: absolute;
+        padding: auto;
+        right: -7vw;
+        top: 50%;
+        font-size: 2.5vw;
+        right: -5vw;
+
+    }
+/* sec-2 */
+    #sec-2,#sec-3,#sec-4{
+        width: 100%;
+        padding:  2vw;
+        height: fit-content;
+    }
+    #sec-2 h1,#sec-3 h1, #sec-4 h1{
+        font-size: 3rem;
+        line-height: 6vw;
+        margin: 1rem 0;
+    
+    }
+    #sec-2 #left #cap, #sec-3 #cap{
+        font-size: 2vw;
+    }
+    #sec-2 #left #cap #dobleline, #sec-3 #cap #dobleline{
+        width: 10vw;
+        height: .3vw;
+        margin-left: 2vw;
+        margin-bottom: 0vw;    
+    }
+    #sec-2 #left  #cap #dobleline::after, #sec-3 #cap #dobleline::after{
+        content: "";
+        display:flex;
+        width: 6vw;
+        margin-top: .4rem;
+        height: .4vw;
+    
+    }
+    #sec-2 #right{
+        width: 50%;
+    }
+    #sec-2 #right .img{
+        width: 80%;
+        height: 70%;
+        border: .5rem solid rgb(249, 0, 170);
+        position: relative;
+        margin-top: 5.5vw;
+        margin-right: -.2vw;
+    }
+    #sec-2 #right .img img{
+        width: 110%;
+        height: 100%;
+        margin-top: -3vw; 
+        margin-left: -6.5vw;
+        /* padding: 1rem; */
+        position: absolute;
+        /* object-fit: cover; */
+    }
+    #sec-3 #card #card-img #price span{
+        font-size: 2.7vw;
+    }
+    
+    #sec-4 .long ul{
+        font-size: 3vw;
+        color: white;
+    }
+}
